@@ -1,0 +1,37 @@
+*
+	box-sizing: border-box
+button
+	width: 250px
+	height: 50px
+	background-color: #ffe66b
+	border: none
+	cursor: pointer
+	transition: 0.5s all
+	outline: none
+	&:hover
+		background-color: pink
+		color: #fff
+	&:active
+		background-color: orange
+	&:focus
+		background-color: green
+
+.click
+	width: 50px
+	height: 50px
+	background-color: green
+	border-radius: 100%
+	margin-top: 10px
+	transition: 0.5s all
+	&:nth-child(2n)
+		background-color: red
+	&::before
+		content: ''
+		display: block
+		height: 2px
+		width: 0%
+		background-color: #000
+		transition: 0.5s all
+	&:hover
+		&::before
+			width: 100%
